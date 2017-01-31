@@ -8,6 +8,8 @@
 
 ## [下载体验](https://github.com/githubwing/ZoomHeader/raw/master/app-debug.apk)
 
+### 不是共享元素！不是共享元素！不是共享元素！重要的话说三遍。共享元素不可以随手指移动的。
+
 
 **先吐槽下饿了么。不提示左右可以滑动。我还是无意中发现的。不提示我怎么知道可以滑动？？**
 
@@ -17,7 +19,9 @@
 
 ### 他是一个Activity还是两个？
 
-相信你肯定有这样的疑问，答案是一个。你看到的中间imageview是viewpager。在Viewpager上面是一个透明的View。当然，这个Activity的背景也是透明的。
+相信你肯定有这样的疑问，答案是一个。所以这**不是**用共享元素实现的，使用共享元素会导致图片无法跟随手指移动。
+
+你看到的中间imageview是viewpager。在Viewpager上面是一个透明的View。当然，这个Activity的背景也是透明的。
 
 ### 实现思路
 
